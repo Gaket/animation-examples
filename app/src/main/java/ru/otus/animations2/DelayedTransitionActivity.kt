@@ -20,6 +20,7 @@ class DelayedTransitionActivity : AppCompatActivity() {
     private lateinit var btnSearchEnd: Button
     private lateinit var searchInput: EditText
     private lateinit var cornerView: View
+    private lateinit var cornerView2: View
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,6 +28,7 @@ class DelayedTransitionActivity : AppCompatActivity() {
 
         root = findViewById(R.id.delayed_transition_root)
         cornerView = findViewById(R.id.corner_view)
+        cornerView2 = findViewById(R.id.corner_view2)
         btnSearchStart = findViewById(R.id.btn_search_start)
         btnSearchEnd = findViewById(R.id.btn_search_end)
         searchInput = findViewById(R.id.search_input)
@@ -40,9 +42,8 @@ class DelayedTransitionActivity : AppCompatActivity() {
         btnSearchStart.visibility = View.GONE
         btnSearchEnd.visibility = View.VISIBLE
         searchInput.visibility = View.VISIBLE
-        cornerView.updateLayoutParams<LinearLayout.LayoutParams> {
-            gravity = Gravity.END
-        }
+        cornerView.visibility = View.GONE
+        cornerView2.visibility = View.VISIBLE
     }
 
     private fun stopSearch() {
@@ -50,9 +51,8 @@ class DelayedTransitionActivity : AppCompatActivity() {
         btnSearchStart.visibility = View.VISIBLE
         btnSearchEnd.visibility = View.GONE
         searchInput.visibility = View.GONE
-        cornerView.updateLayoutParams<LinearLayout.LayoutParams> {
-            gravity = Gravity.START
-        }
+        cornerView.visibility = View.VISIBLE
+        cornerView2.visibility = View.GONE
     }
 
 }

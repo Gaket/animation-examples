@@ -18,7 +18,7 @@ class TransitionManagerActivity : AppCompatActivity() {
 
         val transitionContainer = findViewById<ViewGroup>(R.id.transition_container)
         scene1 = Scene(transitionContainer, findViewById(R.id.scene_root))
-        scene2 = Scene.getSceneForLayout(transitionContainer, R.layout.transition_scene2, this)
+        scene2 = Scene.getSceneForLayout(transitionContainer, R.layout.transition_scene_3, this)
 
         findViewById<Button>(R.id.btn_scene1).setOnClickListener { goToScene1() }
         findViewById<Button>(R.id.btn_scene2).setOnClickListener { goToScene2() }
