@@ -1,11 +1,16 @@
 package ru.otus.animations2
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.ViewGroup
+import android.view.animation.BounceInterpolator
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
+import androidx.transition.ChangeBounds
+import androidx.transition.Fade
 import androidx.transition.Scene
+import androidx.transition.Slide
 import androidx.transition.TransitionManager
+import androidx.transition.TransitionSet
 
 class TransitionManagerActivity : AppCompatActivity() {
 

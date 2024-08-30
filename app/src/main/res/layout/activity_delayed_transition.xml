@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
+    android:animateLayoutChanges="true"
     tools:context=".DelayedTransitionActivity"
     tools:ignore="HardcodedText">
 
@@ -22,17 +23,11 @@
         android:visibility="gone" />
 
     <Button
-        android:id="@+id/btn_search_start"
-        android:layout_width="match_parent"
+        android:id="@+id/btn_search"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:text="Start Search" />
-
-    <Button
-        android:id="@+id/btn_search_end"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="End Search"
-        android:visibility="gone" />
 
 
 </LinearLayout>

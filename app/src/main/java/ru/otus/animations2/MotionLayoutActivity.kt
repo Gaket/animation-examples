@@ -10,20 +10,7 @@ class MotionLayoutActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_motion_layout)
 
-        val motionLayout = findViewById<MotionLayout>(R.id.motion_layout)
-
-        findViewById<SeekBar>(R.id.seek_bar).setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
-
-            override fun onProgressChanged(seekBar: SeekBar, progress: Int, fromUser: Boolean) {
-                motionLayout.progress = progress / 100f
-            }
-
-            override fun onStartTrackingTouch(p0: SeekBar?) {
-            }
-
-            override fun onStopTrackingTouch(p0: SeekBar?) {
-            }
-
-        })
+        val motion = MotionLayout(this)
+        motion.transitionToState(R.id.end2)
     }
 }

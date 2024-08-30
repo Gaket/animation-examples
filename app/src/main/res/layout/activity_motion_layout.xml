@@ -20,13 +20,13 @@
         android:id="@+id/button"
         android:layout_width="64dp"
         android:layout_height="64dp"
- />
+        android:background="#0F0"
+         />
 
     <View
         android:id="@+id/button2"
         android:layout_width="64dp"
-        android:layout_height="64dp"
-  />
+        android:layout_height="64dp" />
 
 
 </androidx.constraintlayout.motion.widget.MotionLayout>

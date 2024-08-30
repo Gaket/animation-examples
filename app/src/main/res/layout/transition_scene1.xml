@@ -12,6 +12,13 @@
         android:background="#F00" />
 
     <View
+        android:id="@+id/view4"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="#F0F" />
+
+    <View
         android:id="@+id/view2"
         android:layout_width="match_parent"
         android:layout_height="48dp"
